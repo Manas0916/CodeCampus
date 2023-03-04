@@ -1,8 +1,9 @@
+//changed img src of thirdyear and fourthyear to thirdyear1 and fourthyear1 respectively.
 import React from "react";
-import firstyear from './images/firstyear.gif'
-import secondyear from './images/secondyear.png'
-import thirdyear from  './images/thirdyear.png'
-import fourthyear from './images/fourthyear.png'
+import firstyear from './images/Banner/firstyear.gif'
+import secondyear from './images/Banner/secondyear.png'
+import thirdyear1 from  './images/Banner/thirdyear1.png'
+import fourthyear1 from './images/Banner/fourthyear1.png'
 
 const Carousel = () => {
   return (
@@ -21,10 +22,10 @@ const Carousel = () => {
             <img src={secondyear} className="d-block w-100" alt="..." />
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={thirdyear} className="d-block w-100 " alt="..."/>
+            <img src={thirdyear1} className="d-block w-100 " alt="..."/>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={fourthyear} className="d-block w-100 " alt="..."/>
+            <img src={fourthyear1} className="d-block w-100 " alt="..."/>
             </div>
         </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
