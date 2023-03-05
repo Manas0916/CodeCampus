@@ -1,13 +1,19 @@
 import './App.css';
-import Carousel from './components/Carousel';
 import Navbar from './components/Navbar';
-import Card from './components/Card';
+import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
+import Home from './components/Home';
+import Java from './components/Java';
+
 function App() {
   return (
     <div className="App">
-      <Navbar/>
-      <Carousel/>
-      <Card/>
+      <Router>
+        <Navbar/>
+        <Routes>
+          <Route exact path="/" element={<Home/>}></Route>
+          <Route exact path="/java" element={<Java/>}></Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

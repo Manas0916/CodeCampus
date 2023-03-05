@@ -27,8 +27,8 @@ const Navbar = () => {
             <li className="nav-item dropdown">
                 <a className="nav-link dropdown-toggle" href="/" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> CS Fundamentals </a>
                 <ul className="dropdown-menu">
-                    <li><a className="dropdown-item" href="/java">Operating Systems</a></li>
-                    <li><a className="dropdown-item" href="/c++">Computer Networks</a></li>
+                    <li><a className="dropdown-item" href="/os">Operating Systems</a></li>
+                    <li><a className="dropdown-item" href="/cn">Computer Networks</a></li>
                 </ul>
             </li>
         </ul>

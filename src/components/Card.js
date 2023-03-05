@@ -14,7 +14,7 @@ const Card = () => {
         <div className="row mx-3 my-5" style={{ display: 'flex', justifyContent: 'center' }}>
           <div className="col-md-3 mx-3">
             <div className="card" style={{ borderRadius: '20px' }}>
-              <a href="https://www.youtube.com/" rel="noreferrer" target="_blank"><img src={one} style={{ borderRadius: '20px' }} className="card-img-top" alt="hello" /></a>
+              <a href="https://practice.geeksforgeeks.org/explore?page=1&category[]=Java&difficulty[]=0&sortBy=submissions&utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab" rel="noreferrer" target="_blank"><img src={one} style={{ borderRadius: '20px' }} className="card-img-top" alt="hello" /></a>
             </div>
           </div>
           <div className="col-md-3 mx-3">
