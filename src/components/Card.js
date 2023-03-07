@@ -13,7 +13,7 @@ const Card = () => {
   return (
     <>
       <h1 >Latest Tutorials</h1>
-      <div className="container ms-5 me-5 my-5 justify-content-center">
+      <div className="container my-5 text-centre">
 
         <div className="row my-2 mx-4 d-flex justify-content-center" >
           <div className="col-md-3 mx-3 my-2">
