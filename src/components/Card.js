@@ -12,77 +12,85 @@ import { Link } from "react-router-dom";
 const Card = () => {
   return (
     <>
-      <h1>Latest Tutorials</h1>
-      <div className="conatiner my-3">
-        <div className="row mx-3 my-5" style={{ display: 'flex', justifyContent: 'center' }}>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+      <h1 >Latest Tutorials</h1>
+      <div className="container ms-5 me-5 my-5 justify-content-center">
+
+        <div className="row my-2 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Project Ideas</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/project" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Service Based Preparation</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Product Based Preparation</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
-        <div className="row mx-3 my-5" style={{ display: 'flex', justifyContent: 'center' }}>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+
+        <div className="row my-2 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Resume / CV Building</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/resume" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+
+          <div className="col-md-3 mx-3 my-2 ">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Competitive Programming / DSA Learning</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3">
-            <div className="card" style={{ width: '25rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
-                <h4 className="card-title">Aptitude Preparation</h4>
-                <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
+                <h4 className="card-title">Aptitude Preparation / Reasoning</h4>
+                <p className="card-text my-4"><strong>Aptitude questions and answers for your placement interviews and competitive exams!</strong></p>
                 <div className="container my-5">
-                  <Link to="https://www.indiabix.com/" target="_blank" class="btn btn-outline-primary">Get Started</Link>
+                  <Link to="https://www.indiabix.com/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </>

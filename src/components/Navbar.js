@@ -2,9 +2,13 @@ import React from 'react';
 import '../App.css';
 const Navbar = () => {
   return (
-    <nav className="navbar navbar-expand-lg  navbar-dark" style={{backgroundColor: "#1f2937"}}>
+    //  navbar background color
+    // style={{backgroundColor: "#1f2937"}}
+    <nav className="navbar navbar-expand-lg navbar-light bg-light" >
     <div className="container-fluid">
-        <a className="navbar-brand" href="/" style={{color : "#d8b3fe"}}><strong>CodeCampus</strong></a>
+        {/* navbar color */}
+        {/* style={{color : "#d8b3fe"}} */}
+        <a className="navbar-brand" href="/"><strong>CodeCampus</strong></a>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
         </button>
