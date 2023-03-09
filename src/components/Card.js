@@ -59,7 +59,7 @@ const Card = () => {
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Resume / CV Building</h4>
-                <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
+                <p className="card-text my-5"><strong>Resume tips that will help you get hired !</strong></p>
                 <div className="container my-5">
                   <Link to="/resume" className="btn btn-outline-primary">Get Started</Link>
                 </div>
