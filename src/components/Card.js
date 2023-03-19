@@ -31,10 +31,10 @@ const Card = () => {
           <div className="col-md-3 mx-3 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
               <div className="card-body">
-                <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Service Based Preparation</h4>
+                <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>TCS NQT Preparation</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/tcsnqtprep" className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>
