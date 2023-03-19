@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-const Project = () => {
+const TcsNqtPrep = () => {
     return (
         <div className='container'>
             <h2 className='my-3'><b><u><strong>TCS NQT Coding Sheet – TCS Coding Questions</strong></u></b></h2>
@@ -170,4 +170,4 @@ const Project = () => {
     );
 }
 
-export default Project;
+export default TcsNqtPrep;
