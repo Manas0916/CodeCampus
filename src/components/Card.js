@@ -92,6 +92,45 @@ const Card = () => {
           </div>
 
         </div>
+
+        <div className="row my-2 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+              <div className="card-body">
+                <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Machine Coding Round Questions (LLD)</h4>
+                <p className="card-text my-5"><strong>Resume tips that will help you get hired !</strong></p>
+                <div className="container my-5">
+                  <Link to="https://workat.tech/machine-coding/practice" className="btn btn-outline-primary">Get Started &raquo;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3 mx-3 my-2 ">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+              <div className="card-body">
+                <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Top Youtube Channels</h4>
+                <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
+                <div className="container my-5">
+                  <Link to="/youtube" className="btn btn-outline-primary">Get Started &raquo;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className="col-md-3 mx-3 my-2">
+            <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: '#eeeeef' }}>
+              <div className="card-body">
+                <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Top Telegram Channels</h4>
+                <p className="card-text my-4"><strong>Aptitude questions and answers for your placement interviews and competitive exams!</strong></p>
+                <div className="container my-5">
+                  <Link to="/telegram" className="btn btn-outline-primary">Get Started &raquo;</Link>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
     </>
   );
