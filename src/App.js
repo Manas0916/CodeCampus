@@ -6,6 +6,8 @@ import Project from './components/Project';
 import Resume from './components/Resume';
 import TcsNqtPrep from './components/TcsNqtPrep';
 import PBC from './components/PBC';
+import DsaCp from './components/DsaCp';
+
 function App() {
   return (
     <div className="App">
@@ -17,6 +19,7 @@ function App() {
           <Route exact path="/resume" element={<Resume/>}></Route>
           <Route exact path="/tcsnqtprep" element={<TcsNqtPrep/>}></Route>
           <Route exact path="/ProductBasedPrep" element={<PBC/>}></Route>
+          <Route exact path="/DsaCp" element={<DsaCp/>}></Route>
         </Routes>
       </Router>
     </div>

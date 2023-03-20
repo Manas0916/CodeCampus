@@ -73,7 +73,7 @@ const Card = () => {
                 <h4 className="card-title" sytle={{backgroundColor: '#74ad60'}}>Competitive Programming / DSA Learning</h4>
                 <p className="card-text my-5"><strong>Stuck in project ideas? Take help with some interesting ideas!</strong></p>
                 <div className="container my-5">
-                  <Link to="/" target="_blank" className="btn btn-outline-primary">Get Started</Link>
+                  <Link to="/DsaCp"className="btn btn-outline-primary">Get Started</Link>
                 </div>
               </div>
             </div>

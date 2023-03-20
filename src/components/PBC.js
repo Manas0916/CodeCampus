@@ -22,11 +22,9 @@ const PBC = () => {
                 <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/apple-sde-sheet-interview-questions-and-answers/" target='_blank' rel="noreferrer">Apple SDE Sheet: Interview Questions and Answers</Link></li>
                 <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/netflix-sde-sheet-interview-questions-and-answers/" target='_blank' rel="noreferrer">Netflix SDE Sheet: Interview Questions and Answers</Link></li>
                 <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/google-sde-sheet-interview-questions-and-answers/" target='_blank' rel="noreferrer">Google SDE Sheet: Interview Questions and Answers</Link></li>
-
             </ul>
         </div>
     </div>
   );
 }
-
 export default PBC;

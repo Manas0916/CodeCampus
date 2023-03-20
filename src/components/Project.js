@@ -17,7 +17,7 @@ const Project = () => {
                 <li className="list-group-item">Ecommerce Website<Link className='mx-3' to='https://lnkd.in/dYfYNhxe' target='_blank' rel="noreferrer">Part 1</Link> <Link to='https://lnkd.in/dFvjc3_t' target='_blank' rel="noreferrer">Part 2</Link> <Link className='mx-3' to='https://lnkd.in/d9SgXd_n' target='_blank' rel="noreferrer">Part 3</Link></li>
                 <li className="list-group-item"><Link to='https://lnkd.in/dA7bbVnh' target='_blank' rel="noreferrer">Portfolio Website</Link></li>
                 <li className="list-group-item"><Link to='https://lnkd.in/d6G4aMSX' target='_blank' rel="noreferrer">Cryptocurrency Tracker</Link></li>
-                <li className="list-group-item"></li>
+                <li className="list-group-item"><Link to='https://workat.tech/project-ideas' target='_blank' rel='nonreferrer'> Project Ideas for Software Developers </Link></li>
             </ul>
         </div>
         <div className="container mb-5">
