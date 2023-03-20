@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import Resumetemplate from './images/resume-template.png'
 const Resume = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   return (
     <>
         <div className='container my-3 text-start'>
@@ -20,7 +23,7 @@ const Resume = () => {
             </p>
             <p className='h5 text-muted'>
                 <br />
-                A resume must be built according to a specific job opening and the company.Resumes can have different <br />
+                A resume must be built according to a specific job opening and the company. Resumes can have different <br />
                 formats based on the profile for which you are applying, the company to which you are applying, etc. <br />
                  Here, we will discuss a format that is suitable for the role of <b><strong>Software Developers</strong></b>.
             </p>

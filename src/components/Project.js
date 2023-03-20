@@ -1,6 +1,9 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {Link} from 'react-router-dom';
 const Project = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
   return (
     <div className='container'>
         <h2 className='my-3'><b><strong>All Important You Tube Links for Projects Ideas</strong></b></h2>

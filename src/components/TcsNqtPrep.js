@@ -1,7 +1,11 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import { Link } from 'react-router-dom';
 
 const TcsNqtPrep = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []);
+      
     return (
         <div className='container'>
             <h2 className='my-3'><b><u><strong>TCS NQT Coding Sheet – TCS Coding Questions</strong></u></b></h2>
@@ -12,7 +16,9 @@ const TcsNqtPrep = () => {
             <div className="container text-start">
                 <p className='h5 text-muted'>
                     <br />
-                    TCS NQT is an exam conducted by TCS(Tata Consultancy Services) to hire for the role of TCS Ninja and TCS Digital. All the interested<br /> students can find the detailed TCS NQT Syllabus and Exam pattern in this article. Nearly 1 million (10 Lakh+) candidates appears in the<br /> TCS NQT test every year.
+                    TCS NQT is National Qualifier Test conducted by TCS(Tata Consultancy Services) to hire for the role of TCS Ninja and TCS Digital. <br/> All the interested students can find the detailed TCS NQT Syllabus and Exam pattern in this article. Nearly 1 million (10 Lakh+) <br/> 
+                    candidates appears in the TCS NQT test every year. It is a prerequisite for all the tests. The validity of the NQT score is of two years. Candidates are eligible to apply on the TCS iON Job Listing Portal with an NQT score. NQT exams are conducted in both online and <br/> offline modes. This sheet will help you prepare for the TCS NQT exam & you can apply for all the top-notch companies that <br/> 
+                    recognize the exam score. Here we have collected all the interview questions and answers to land a job at TCS.
                 </p>
             </div>
             <br />
@@ -158,14 +164,23 @@ const TcsNqtPrep = () => {
                     <li className="list-group-item"><Link to="https://takeuforward.org/data-structure/reverse-words-in-a-string/" target='_blank' rel="noreferrer">Reverse words in a string</Link></li>
                 </ul>
             </div>
-            <div className="container text-start">
+            <div className="container text-start mb-5">
                 <p className='h5 text-muted'>
                     <br />
                     <b style={{color: "#cf2d2d"}}>Tip:</b> All of the above links contains detailed tutorials to each and every coding problem, we recommend solving these questions on your own before jumping to the solutions.
                 </p>
             </div>
+            <div className='container mt-3 mb-5 text-start'>
+            <h2><u>Prepare for more such Service Based Companies like Wipro, Infosys, etc</u></h2>
             <br/>
-            <br/>
+            <ul className="list-group">
+                <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/wipro-sde-sheet-interview-questions-and-answers/#CP" target='_blank' rel="noreferrer">Wipro Guide</Link></li>
+                <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/infosys-sde-sheet-interview-questions-and-answers/#DSA" target='_blank' rel="noreferrer">Infosys Guide</Link></li>
+                <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/tcs-sde-sheet-interview-questions-and-answers/" target='_blank' rel="noreferrer">GFG TCS Preparation Guide</Link></li>
+                <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/cognizant-sde-sheet-interview-questions-and-answers/#CS" target='_blank' rel="noreferrer">Cognizant Guide</Link></li>
+                <li className="list-group-item"><Link to="https://www.geeksforgeeks.org/hcl-sde-sheet-interview-questions-and-answers/#CP" target='_blank' rel="noreferrer">HCL Guide</Link></li>
+            </ul>
+        </div>
         </div>
     );
 }
