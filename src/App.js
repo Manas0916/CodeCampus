@@ -7,6 +7,7 @@ import Resume from './components/Resume';
 import TcsNqtPrep from './components/TcsNqtPrep';
 import PBC from './components/PBC';
 import DsaCp from './components/DsaCp';
+import PageNotFound from './components/PageNotFound';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path="/tcsnqtprep" element={<TcsNqtPrep/>}></Route>
           <Route exact path="/ProductBasedPrep" element={<PBC/>}></Route>
           <Route exact path="/DsaCp" element={<DsaCp/>}></Route>
+          <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
       </Router>
     </div>
