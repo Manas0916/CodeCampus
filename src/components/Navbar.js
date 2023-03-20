@@ -22,8 +22,20 @@ const Navbar = () => {
                 <Link className="nav-link dropdown-toggle" to="/" role="button" data-mdb-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" id="navbarDropdownMenuLink"  aria-expanded="false"> Programming Languages </Link>
 
                 <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <li ><Link className="dropdown-item" to="/c++">C++</Link></li>
-                    <li><Link className="dropdown-item" to="/python">Python</Link></li>
+                <li >
+                        <Link className="dropdown-item" to='/'> C++ &raquo;</Link>
+                        <ul className="dropdown-submenu dropdown-menu">
+                            <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to="https://www.geeksforgeeks.org/c-plus-plus/?ref=shm">Learn C++ Tutorial</Link></li>
+                            <li>
+                                <Link className="dropdown-item" to="/">Practice Coding Questions &raquo;</Link>
+                                <ul className="dropdown-submenu dropdown-menu">
+                                    <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to='https://practice.geeksforgeeks.org/explore?page=1&category[]=CPP&difficulty[]=-1&sortBy=submissions&utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab'>Basic</Link></li>
+                                    <li><Link className="dropdown-item"  target='_blank' rel='noreferrer'to='https://practice.geeksforgeeks.org/explore?page=1&category[]=CPP&difficulty[]=0&sortBy=submissions&utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab'>Easy</Link></li>
+                                    <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to='https://practice.geeksforgeeks.org/explore?page=1&category[]=CPP&difficulty[]=1&sortBy=submissions&utm_source=geeksforgeeks&utm_medium=article_practice_tab&utm_campaign=article_practice_tab'>Medium</Link></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                     <li >
                         <Link className="dropdown-item" to='/'> Java &raquo;</Link>
                         <ul className="dropdown-submenu dropdown-menu">
@@ -35,6 +47,15 @@ const Navbar = () => {
                                     <li><Link className="dropdown-item"  target='_blank' rel='noreferrer'to='http://bit.ly/3L9T4yq'>Easy</Link></li>
                                     <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to='http://bit.ly/3J0XZzf'>Medium</Link></li>
                                 </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li >
+                        <Link className="dropdown-item" to='/'> Python &raquo;</Link>
+                        <ul className="dropdown-submenu dropdown-menu">
+                            <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to="https://www.geeksforgeeks.org/python-programming-language/">Learn Python Tutorial</Link></li>
+                            <li>
+                                <Link className="dropdown-item" to="https://www.geeksforgeeks.org/python-exercises-practice-questions-and-solutions/" target='_blank' rel='noreferrer'>Practice Coding Questions</Link>
                             </li>
                         </ul>
                     </li>
