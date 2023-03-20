@@ -118,7 +118,7 @@ const Resume = () => {
                 <img className='text-centre' src={Resumetemplate} alt="" style={{width: '40%', height:'40%'}}/>
             </div>
             <div className="container">
-                <a className='btn btn-outline-danger btn-lg mx-5 my-4' target='_blank' tyle={{BackgroundColor: "#32bacb"}} href="https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn" rel='noreferrer'>Here is the website if you want to Design your Resume</a>
+                <a className='btn btn-outline-danger btn-lg mx-5 my-4' target='_blank' tyle={{BackgroundColor: "#32bacb"}} href="https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn" rel='noreferrer'>Here is the website if you want to Design your Resume &raquo;</a>
             </div>
         </div>
     </>

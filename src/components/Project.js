@@ -34,7 +34,7 @@ const Project = () => {
         </div>
         <div className="container mb-5">
             <h3>For More Such Project Ideas And Guides on Multiple Domains</h3>
-            <Link className='btn btn-primary my-3' to='https://projectlearn.io/' target='_blank' rel="noreferrer">Explore More</Link>
+            <Link className='btn btn-primary my-3' to='https://projectlearn.io/' target='_blank' rel="noreferrer">Explore More &raquo;</Link>
         </div>
     </div>
   );

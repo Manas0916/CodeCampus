@@ -23,7 +23,7 @@ const TcsNqtPrep = () => {
             </div>
             <br />
             <div className="container">
-                <h5><Link to="https://takeuforward.org/interviews/tcs-nqt-syllabus-and-exam-pattern-updated-dec-2021/" target="_blank">Check Detailed TCS NQT Syllabus Here</Link></h5>
+                <h5><Link to="https://takeuforward.org/interviews/tcs-nqt-syllabus-and-exam-pattern-updated-dec-2021/" target="_blank">Check Detailed TCS NQT Syllabus Here &raquo;</Link></h5>
             </div>
             <br />
             <div className='container mt-5 text-muted'>
