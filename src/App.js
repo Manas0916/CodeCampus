@@ -11,7 +11,7 @@ import DsaCp from './components/DsaCp';
 import Telegram from './components/Telegram';
 import Youtube from './components/Youtube';
 import PageNotFound from './components/PageNotFound';
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 function App() {
   // const storedDarkMode = localStorage.getItem("DARK_MODE");
