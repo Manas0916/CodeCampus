@@ -9,7 +9,7 @@ const Telegram = () => {
   return (
     <div className='container'>
         <div className='container my-3 text-start'>
-            <h2><u>Top Telegram Channels For Job Updates</u></h2>
+            <h2><b><strong>Top Telegram Channels For Job Updates</strong></b></h2>
             <br/>
             <ul className="list-group">
                 <li className="list-group-item"><Link to="https://t.me/goyalarsh" target='_blank' rel="noreferrer">Arsh Goyal</Link></li>

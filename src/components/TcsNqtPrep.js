@@ -8,7 +8,7 @@ const TcsNqtPrep = () => {
       
     return (
         <div className='container'>
-            <h2 className='my-3'><b><u><strong>TCS NQT Coding Sheet – TCS Coding Questions</strong></u></b></h2>
+            <h2 className='my-3'><b><strong>TCS NQT Coding Sheet – TCS Coding Questions</strong></b></h2>
             <br />
             <div className='container my-3 text-start' style={{ color: "#cf2d2d" }}>
                 <h2 >About TCS NQT :- </h2>

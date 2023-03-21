@@ -12,7 +12,7 @@ const DsaCp = () => {
             <b style={{color: "#cf2d2d"}}>Important Note : </b> All of the below links contains all Easy to Advance Problems, we recommend solving easy questions first on your own before jumping to the medium and hard Problems.
         </p>
         <div className='container my-3 text-start my-5'>
-            <h2><u>Topic-Wise-DSA Problems</u></h2>
+            <h2><b>Topic-Wise-DSA Problems</b></h2>
             <br/>
             <ul className="list-group">
                 <li className="list-group-item"><Link to="https://leetcode.com/tag/array/" target='_blank' rel="noreferrer">Arrays</Link></li>
@@ -40,7 +40,7 @@ const DsaCp = () => {
             </ul>
         </div>
         <div className='container mt-3 mb-5 text-start'>
-                <h2><u>DSA and CP Sheets</u></h2>
+                <h2><b>DSA and CP Sheets</b></h2>
                 <br />
                 <ul className="list-group">
                     <li className="list-group-item"><Link to="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target='_blank' rel="noreferrer">Strivers A to Z Course / Sheet</Link></li>

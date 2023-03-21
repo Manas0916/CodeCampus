@@ -9,10 +9,10 @@ import { Link } from "react-router-dom";
 // import cpdsa from './images/Cards/cpdsa.png'
 // import aptitude from './images/Cards/aptitude.png'
 
-const Card = () => {
+const Card = (props) => {
   return (
     <>
-      <h1 >Latest Tutorials</h1>
+      <h1 className={`text-${props.mode === 'light'?'dark':'light'}`}>Latest Tutorials</h1>
       <div className="container my-5 text-centre">
 
         <div className="row my-2 mx-4 d-flex justify-content-center" >

@@ -9,7 +9,7 @@ const Youtube = () => {
   return (
     <div className='container'>
         <div className='container my-3 text-start'>
-            <h2><u>Top YouTube Channels For CS Students</u></h2>
+            <h2><b><strong>Top YouTube Channels For CS Students</strong></b></h2>
             <br/>
             <ul className="list-group">
                 <li className="list-group-item"><Link to="https://www.youtube.com/@ApnaCollegeOfficial" target='_blank' rel="noreferrer">Apna College</Link></li>

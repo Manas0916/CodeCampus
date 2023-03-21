@@ -11,14 +11,31 @@ import DsaCp from './components/DsaCp';
 import Telegram from './components/Telegram';
 import Youtube from './components/Youtube';
 import PageNotFound from './components/PageNotFound';
+import React, { useState } from 'react';
 
 function App() {
+  const [mode, setMode] = useState('light');
+
+  const toggleMode = () =>{
+    if(mode === 'dark'){
+      setMode('light');
+      document.body.style.backgroundColor = 'white';
+    }
+    else{
+      setMode('dark');
+      document.body.style.backgroundColor = "#111827";
+    }
+  };
+
+
+
+
   return (
     <div className="App">
       <Router>
-        <Navbar/>
+        <Navbar mode = {mode} toggleMode={toggleMode}/>
         <Routes>
-          <Route exact path="/" element={<Home/>}></Route>
+          <Route exact path="/" element={<Home mode = {mode} toggleMode={toggleMode}/>}></Route>
           <Route exact path="/virtuallab" element={<VirtualLab/>}></Route>
           <Route exact path="/project" element={<Project/>}></Route>
           <Route exact path="/resume" element={<Resume/>}></Route>

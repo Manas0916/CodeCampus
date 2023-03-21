@@ -3,11 +3,11 @@ import Card from './Card';
 import Carousel from './Carousel';
 
 
-const Home = () => {
+const Home = (props) => {
   return (
     <div>
-      <Carousel/>
-      <Card/>
+      <Carousel />
+      <Card mode = {props.mode} toggleMode={props.toggleMode}/>
     </div>
   );
 }
