@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
     return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} fixed-top`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} fixed-top shadow-lg`} data-bs-theme="dark">
         <div className="container-fluid">
             {/* navbar color */}
             {/* style={{color : "#d8b3fe"}} */}
@@ -15,15 +15,15 @@ const Navbar = (props) => {
                 <span className="navbar-toggler-icon"></span>
             </button>
             <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul className="navbar-nav me-auto mb-2 mb-lg-0" >
                     <li className="nav-item"> <Link className="nav-link active" aria-current="page" to="/">Home</Link> </li>
                     <li className="nav-item"> <Link className="nav-link active" to="/about">About</Link> </li>
 
-                    <li className="nav-item dropdown">
+                    <li className="nav-item dropdown" >
                         <Link className="nav-link active dropdown-toggle" to="/" role="button" data-mdb-toggle="dropdown" aria-haspopup="true" data-bs-toggle="dropdown" id="navbarDropdownMenuLink" aria-expanded="false"> Programming Languages </Link>
-
-                        <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li >
+            
+                        <ul className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" >
+                            <li>
                                 <Link className="dropdown-item" to='/'> C++ &raquo;</Link>
                                 <ul className="dropdown-submenu dropdown-menu">
                                     <li><Link className="dropdown-item" target='_blank' rel='noreferrer' to="https://www.geeksforgeeks.org/c-plus-plus/?ref=shm">Learn C++ Tutorial</Link></li>

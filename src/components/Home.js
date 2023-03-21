@@ -6,7 +6,7 @@ import Carousel from './Carousel';
 const Home = (props) => {
   return (
     <div>
-      <Carousel />
+      <Carousel mode = {props.mode}/>
       <Card mode = {props.mode} toggleMode={props.toggleMode}/>
     </div>
   );

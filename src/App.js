@@ -11,25 +11,34 @@ import DsaCp from './components/DsaCp';
 import Telegram from './components/Telegram';
 import Youtube from './components/Youtube';
 import PageNotFound from './components/PageNotFound';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function App() {
+  const storedDarkMode = localStorage.getItem("DARK_MODE");
   const [mode, setMode] = useState('light');
-  
+  const [darkMode, setDarkMode] = useState(storedDarkMode);
+
+
   const toggleMode = ()=>{
     if(mode === 'light')
     {
       setMode('dark');
-      document.body.style.backgroundColor = '#3f404a';    //#111827
+      document.body.style.backgroundColor = '#3f404a';
     }
     else{
       setMode('light');
       document.body.style.backgroundColor = '#eeecea';
     }
+    setDarkMode(!darkMode);
   }
 
+  useEffect(() => {
+    localStorage.setItem("DARK_MODE", darkMode);
+    // console.log(`Is in dark mode? ${darkMode}`);
+  }, [darkMode]);
+
   return (
-    <div className="App">
+    <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
       <Router>
         <Navbar mode = {mode} toggleMode={toggleMode}/>
         <Routes>

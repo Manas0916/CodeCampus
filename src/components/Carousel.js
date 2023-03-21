@@ -5,7 +5,7 @@ import secondyear from './images/Banner/secondyear.png'
 import thirdyear1 from  './images/Banner/thirdyear1.png'
 import fourthyear1 from './images/Banner/fourthyear1.png'
 
-const Carousel = () => {
+const Carousel = (props) => {
   return (
     <div id="carouselExampleInterval" className=" container carousel slide my-5 pt-5" data-bs-ride="carousel">
         <div className="carousel-indicators">
@@ -16,16 +16,16 @@ const Carousel = () => {
         </div>
         <div className="container carousel-inner my-3 mx-8">
             <div className="carousel-item active" data-bs-interval="1800">
-            <img src={firstyear} className="d-block w-100" alt="..." />
+            <img src={firstyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}} />
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={secondyear} className="d-block w-100" alt="..." />
+            <img src={secondyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={thirdyear1} className="d-block w-100 " alt="..."/>
+            <img src={thirdyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={fourthyear1} className="d-block w-100 " alt="..."/>
+            <img src={fourthyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
             </div>
         </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
