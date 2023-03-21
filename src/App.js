@@ -38,7 +38,7 @@ function App() {
   // }, [darkMode]);
 
   return (
-    <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
+    <div className="App">
       <Router>
         <Navbar mode = {mode} toggleMode={toggleMode}/>
         <Routes>
