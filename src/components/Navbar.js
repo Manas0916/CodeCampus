@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = (props) => {
     return (
-    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
+    <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} fixed-top`}>
         <div className="container-fluid">
             {/* navbar color */}
             {/* style={{color : "#d8b3fe"}} */}

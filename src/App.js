@@ -15,20 +15,18 @@ import React, { useState } from 'react';
 
 function App() {
   const [mode, setMode] = useState('light');
-
-  const toggleMode = () =>{
-    if(mode === 'dark'){
-      setMode('light');
-      document.body.style.backgroundColor = 'white';
+  
+  const toggleMode = ()=>{
+    if(mode === 'light')
+    {
+      setMode('dark');
+      document.body.style.backgroundColor = '#3f404a';    //#111827
     }
     else{
-      setMode('dark');
-      document.body.style.backgroundColor = "#111827";
+      setMode('light');
+      document.body.style.backgroundColor = '#eeecea';
     }
-  };
-
-
-
+  }
 
   return (
     <div className="App">
@@ -36,14 +34,14 @@ function App() {
         <Navbar mode = {mode} toggleMode={toggleMode}/>
         <Routes>
           <Route exact path="/" element={<Home mode = {mode} toggleMode={toggleMode}/>}></Route>
-          <Route exact path="/virtuallab" element={<VirtualLab/>}></Route>
-          <Route exact path="/project" element={<Project/>}></Route>
-          <Route exact path="/resume" element={<Resume/>}></Route>
-          <Route exact path="/tcsnqtprep" element={<TcsNqtPrep/>}></Route>
-          <Route exact path="/ProductBasedPrep" element={<PBC/>}></Route>
-          <Route exact path="/DsaCp" element={<DsaCp/>}></Route>
-          <Route exact path="/telegram" element={<Telegram/>}></Route>
-          <Route exact path="/youtube" element={<Youtube/>}></Route>
+          <Route exact path="/virtuallab" element={<VirtualLab mode={mode} />}></Route>
+          <Route exact path="/project" element={<Project mode={mode}/>}></Route>
+          <Route exact path="/resume" element={<Resume mode={mode}/>}></Route>
+          <Route exact path="/tcsnqtprep" element={<TcsNqtPrep mode={mode}/>}></Route>
+          <Route exact path="/ProductBasedPrep" element={<PBC mode={mode}/>}></Route>
+          <Route exact path="/DsaCp" element={<DsaCp mode={mode}/>}></Route>
+          <Route exact path="/telegram" element={<Telegram mode={mode}/>}></Route>
+          <Route exact path="/youtube" element={<Youtube mode={mode} />}></Route>
           <Route path="*" element={<PageNotFound/>}></Route>
         </Routes>
       </Router>
