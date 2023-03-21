@@ -14,9 +14,9 @@ import PageNotFound from './components/PageNotFound';
 import React, { useState, useEffect } from 'react';
 
 function App() {
-  const storedDarkMode = localStorage.getItem("DARK_MODE");
+  // const storedDarkMode = localStorage.getItem("DARK_MODE");
   const [mode, setMode] = useState('light');
-  const [darkMode, setDarkMode] = useState(storedDarkMode);
+  // const [darkMode, setDarkMode] = useState(storedDarkMode);
 
 
   const toggleMode = ()=>{
@@ -29,13 +29,13 @@ function App() {
       setMode('light');
       document.body.style.backgroundColor = '#eeecea';
     }
-    setDarkMode(!darkMode);
+    // setDarkMode(!darkMode);
   }
 
-  useEffect(() => {
-    localStorage.setItem("DARK_MODE", darkMode);
-    // console.log(`Is in dark mode? ${darkMode}`);
-  }, [darkMode]);
+  // useEffect(() => {
+  //   localStorage.setItem("DARK_MODE", darkMode);
+  //   // console.log(`Is in dark mode? ${darkMode}`);
+  // }, [darkMode]);
 
   return (
     <div className="App" data-theme={darkMode ? 'dark' : 'light'}>
