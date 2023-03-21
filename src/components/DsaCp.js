@@ -8,11 +8,11 @@ const DsaCp = (props) => {
 
   return (
     <div className='container'>
-        <p className={`h5 ${props.mode==='dark'?'text-light':'text-muted'}`}><br />
+        <p className={`h5 mt-5 pt-3 ${props.mode==='dark'? 'text-light':'text-muted'}`}><br />
             <b style={{color: '#cf2d2d'}}>Important Note : </b> All of the below links contains all Easy to Advance Problems, we recommend solving easy questions first on your own before jumping to the medium and hard Problems.
         </p>
-        <div className='container my-3 text-start my-5'>
-            <b><h2 style={{color: props.mode=== 'dark'?'white':'black'}}>Topic-Wise-DSA Problems</h2></b>
+        <div className='container text-start my-5'>
+            <b><h2 style={{color: props.mode === 'dark'?'white':'black'}}><b> Topic-Wise-DSA Problems </b></h2></b>
             <br/>
             <ul className="list-group">
                 <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://leetcode.com/tag/array/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Arrays</Link></li>
@@ -40,18 +40,18 @@ const DsaCp = (props) => {
             </ul>
         </div>
         <div className='container mt-3 mb-5 text-start'>
-                <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}><b>DSA and CP Sheets</b></h2>
-                <br />
-                <ul className="list-group">
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Strivers A to Z Course / Sheet</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://docs.google.com/spreadsheets/d/1SBx6ifpBn3TVCQWSzK9ka26glyNTyS-fqn6bfOVaXFE/edit#gid=0" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>75 Days Challenge Sheet</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://cses.fi/problemset/list" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>CSES ProblemSet</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://docs.google.com/spreadsheets/u/0/d/1MGVBJ8HkRbCnU6EQASjJKCqQE8BWng4qgL0n3vCVOxE/htmlview" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>DSA Sheet by Arsh Goyal (45 days Plan)</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://takeuforward.org/interview-experience/strivers-cp-sheet/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Strivers Competitive Programming Sheet</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://codeforcesladders.firebaseapp.com" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Codeforces Ladder (A2OJ)</Link></li>
-                    <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://www.spoj.com/problems/classical/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>SPOJ</Link></li>
-                </ul>
-            </div>
+            <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}><b>DSA and CP Sheets</b></h2>
+            <br />
+            <ul className="list-group">
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://takeuforward.org/strivers-a2z-dsa-course/strivers-a2z-dsa-course-sheet-2/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Strivers A to Z Course / Sheet</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://docs.google.com/spreadsheets/d/1SBx6ifpBn3TVCQWSzK9ka26glyNTyS-fqn6bfOVaXFE/edit#gid=0" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>75 Days Challenge Sheet</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://cses.fi/problemset/list" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>CSES ProblemSet</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://docs.google.com/spreadsheets/u/0/d/1MGVBJ8HkRbCnU6EQASjJKCqQE8BWng4qgL0n3vCVOxE/htmlview" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>DSA Sheet by Arsh Goyal (45 days Plan)</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://takeuforward.org/interview-experience/strivers-cp-sheet/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Strivers Competitive Programming Sheet</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://codeforcesladders.firebaseapp.com" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Codeforces Ladder (A2OJ)</Link></li>
+                <li className="list-group-item"  style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://www.spoj.com/problems/classical/" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>SPOJ</Link></li>
+            </ul>
+        </div>
     </div>
   );
 }

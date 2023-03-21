@@ -8,8 +8,8 @@ const PBC = (props) => {
 
   return (
     <div className='container'>
-        <div className='container my-3 text-start'>
-            <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}>All Important Sheets for Cracking Any Product Based Companies</h2>
+        <div className='container my-5 pt-5  text-start'>
+            <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}><b> All Important Sheets for Cracking Any Product Based Companies </b></h2>
             <br/>
             <ul className="list-group">
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://www.geeksforgeeks.org/dsa-sheet-by-love-babbar/#Arrays" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Love Babbar's SDE Sheet</Link></li>

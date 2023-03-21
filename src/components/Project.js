@@ -6,9 +6,11 @@ const Project = (props) => {
       }, [])
   return (
     <div className='container'>
-        <h2 className='my-3' style={{color: props.mode==='dark'?'white':'black'}}><b><strong>All Important You Tube Links for Projects Ideas</strong></b></h2>
+        <div className="container mt-5 pt-5">
+            <h2 className='my-3' style={{color: props.mode==='dark'?'white':'black'}}><b><strong>All Important You Tube Links for Projects Ideas</strong></b></h2>
+        </div>
         <div className="container ">
-            <h3 className={`mt-5 ${props.mode==='dark'?'text-light':'text-muted'}`}><strong>Full-Stack development Project Ideas With You Tube Resource</strong></h3>
+            <h3 className={`mt-5 pb-3 ${props.mode==='dark'?'text-light':'text-muted'}`}><strong>Full-Stack development Project Ideas With You Tube Resource</strong></h3>
             <ul className="list-group list-group-flush">
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://lnkd.in/dxcZTAsn" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>AMAZON Clone</Link></li>
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to='https://lnkd.in/d4gubPzw' target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Netflix Clone</Link></li>
@@ -21,7 +23,7 @@ const Project = (props) => {
             </ul>
         </div>
         <div className="container mb-5">
-            <h3 className={`mt-5 ${props.mode==='dark'?'text-light':'text-muted'}`}><strong>Best Android Projects</strong></h3>
+            <h3 className={`mt-5 pb-3 ${props.mode==='dark'?'text-light':'text-muted'}`}><strong>Best Android Projects</strong></h3>
             <ul className="list-group list-group-flush">
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://lnkd.in/dHgZmYgQ" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Sticky Notes App</Link></li>
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to='https://lnkd.in/dADxVHqB' target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Face Filters App</Link></li>
@@ -33,7 +35,7 @@ const Project = (props) => {
         </div>
         <div className="container mb-5">
             <h3 style={{color: props.mode==='dark'?'white':'black'}}>For More Such Project Ideas And Guides on Multiple Domains</h3>
-            <Link className='btn btn-primary my-3' to='https://projectlearn.io/' target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Explore More &raquo;</Link>
+            <Link className={`btn btn-${props.mode==='dark'?'warning':'primary'} my-3`} to='https://projectlearn.io/' target='_blank' rel="noreferrer" >Explore More &raquo;</Link>
         </div>
     </div>
   );

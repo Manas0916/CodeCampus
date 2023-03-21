@@ -8,10 +8,10 @@ const Youtube = (props) => {
 
   return (
     <div className='container'>
-        <div className='container my-5 p-5 text-start'>
+        <div className='container my-5 pt-5 text-start'>
             <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}><b><strong>Top YouTube Channels For CS Students</strong></b></h2>
         </div>
-        <div className='container my-2 mb-5 pb-5 text-start'>
+        <div className='container mt-1 mb-5 pb-5 text-start'>
             <ul className="list-group">
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://www.youtube.com/@ApnaCollegeOfficial" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Apna College</Link></li>
                 <li className="list-group-item" style={{borderRadius: '15px', backgroundColor: props.mode==='dark'?'#42424F':'white'}}><Link to="https://www.youtube.com/@JennyslecturesCSIT" target='_blank' rel="noreferrer" style={{color: props.mode==='dark'?'white':'#1d73e9'}}>Jenny's Lectures CS IT</Link></li>

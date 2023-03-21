@@ -6,8 +6,8 @@ const Resume = (props) => {
       }, [])
   return (
     <>
-        <div className='container my-3 text-start'>
-        <h2 style={{color: props.mode=== 'dark'?'white':'black'}}><b><strong> Resume Building Guide: For Coding Interviews</strong></b></h2>
+        <div className='container mb-3 mt-5 pt-5 text-start'>
+            <h2 style={{color: props.mode=== 'dark'?'white':'black'}}><b><strong> Resume Building Guide: For Coding Interviews</strong></b></h2>
         </div>
         <div className="container text-start">
             <p className={`h5 ${props.mode==='dark'?'text-light':'text-muted'}`}>

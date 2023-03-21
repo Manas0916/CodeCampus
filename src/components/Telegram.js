@@ -8,7 +8,7 @@ const Telegram = (props) => {
 
   return (
     <div className='container'>
-        <div className='container my-5 p-5 text-start'>
+        <div className='container my-5 pt-5 text-start'>
             <h2 style={{color: props.mode=== 'dark'? 'white' : 'black' }}><b><strong>Top Telegram Channels For Job Updates</strong></b></h2>
             <br/>
         </div>
