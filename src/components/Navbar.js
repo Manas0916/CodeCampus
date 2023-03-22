@@ -1,6 +1,8 @@
 import React from 'react';
 import '../App.css';
 import { Link } from "react-router-dom";
+import moon from './images/DMI/moon.png';
+import sun from './images/DMI/sun.png';
 // import PropTypes from 'prop-types';
 
 
@@ -119,9 +121,16 @@ const Navbar = (props) => {
 
                     </ul>
                 </div>
+                <div className="mx-3">
+                    {props.mode==='dark'?<img src={sun} alt="" width="20px"/>:''}
+                </div>
                 <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
+                    {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode==='dark'?<img src={sun} alt="" width="20px" />:''}</label> */}
                     <input className="form-check-input" aria-checked='false' style={{ cursor: 'pointer' }} onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    <label className="form-check-label" htmlFor="flexSwitchCheckDefault">Dark Mode</label>
+                    {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode==='light'?<img src={moon} alt="" width="20px" />:''}</label> */}
+                </div>
+                <div className="mx-2">
+                    {props.mode==='light'?<img src={moon} alt="" width="20px"/>:''}
                 </div>
             </div>
 

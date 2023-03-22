@@ -2,6 +2,7 @@ import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
 import Home from './components/Home';
+import About from './components/About';
 import VirtualLab from './components/VirtualLab';
 import Project from './components/Project';
 import Resume from './components/Resume';
@@ -43,6 +44,7 @@ function App() {
         <Navbar mode = {mode} toggleMode={toggleMode}/>
         <Routes>
           <Route exact path="/" element={<Home mode = {mode} toggleMode={toggleMode}/>}></Route>
+          <Route exact path="/about" element={<About mode={mode} />}></Route>
           <Route exact path="/virtuallab" element={<VirtualLab mode={mode} />}></Route>
           <Route exact path="/project" element={<Project mode={mode}/>}></Route>
           <Route exact path="/resume" element={<Resume mode={mode}/>}></Route>
@@ -51,7 +53,7 @@ function App() {
           <Route exact path="/DsaCp" element={<DsaCp mode={mode}/>}></Route>
           <Route exact path="/telegram" element={<Telegram mode={mode}/>}></Route>
           <Route exact path="/youtube" element={<Youtube mode={mode} />}></Route>
-          <Route path="*" element={<PageNotFound/>}></Route>
+          <Route path="*" element={<PageNotFound mode={mode} />}></Route>
         </Routes>
       </Router>
     </div>
