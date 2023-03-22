@@ -4,6 +4,7 @@ import firstyear from './images/Banner/firstyear.gif'
 import secondyear from './images/Banner/secondyear.png'
 import thirdyear1 from  './images/Banner/thirdyear1.png'
 import fourthyear1 from './images/Banner/fourthyear1.png'
+import { Link } from "react-router-dom";
 
 const Carousel = (props) => {
   return (
@@ -16,16 +17,16 @@ const Carousel = (props) => {
         </div>
         <div className="container carousel-inner my-3 mx-8">
             <div className="carousel-item active" data-bs-interval="1800">
-            <img src={firstyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}} />
+              <Link to={'https://youtu.be/4N2c8LMz8XI'} target='_blank'><img src={firstyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}} /> </Link>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={secondyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
+              <Link to={'https://youtu.be/C2QoDC1rka8'} target='_blank'><img src={secondyear} className="d-block w-100" alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/> </Link>
+            </div>
+            <div className="carousel-item" data-bs-interval="1800">
+              <Link to={'https://youtu.be/ffuK6vt8tdY'} target='_blank'><img src={thirdyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/> </Link>
             </div>
             <div className="carousel-item" data-bs-interval="2000">
-            <img src={thirdyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
-            </div>
-            <div className="carousel-item" data-bs-interval="2000">
-            <img src={fourthyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/>
+              <Link to={'https://youtu.be/VY6003vijLw'} target='_blank'><img src={fourthyear1} className="d-block w-100 " alt="..." style={{filter: props.mode==='dark'? 'brightness(.7) contrast(1.2)': 'brightness(1) contrast(1)'}}/> </Link>
             </div>
         </div>
       <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">

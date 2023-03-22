@@ -98,7 +98,7 @@ const Navbar = (props) => {
 
                         <li className="nav-item"> <Link className="nav-link active" target='_blank' to="https://www.codewithharry.com/tutorial/php/">PHP</Link> </li>
 
-                        <li className="nav-item"> <Link className="nav-link active" target='_blank' to="https://www.codewithharry.com/tutorial/react-home/">REACT JS</Link> </li>
+                        <li className="nav-item"> <Link className="nav-link active" target='_blank' to="https://www.codewithharry.com/tutorial/react-home/">REACT<b>.</b>JS</Link> </li>
 
                         <li className="nav-item dropdown">
                             <Link className="nav-link active dropdown-toggle" to="/" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> SQL </Link>
