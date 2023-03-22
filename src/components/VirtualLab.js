@@ -10,9 +10,8 @@ const VirtualLab = (props) => {
         <>
             <div className='container my-5'>
                 <div className='container my-5 p-3' style={{ color: props.mode === 'dark' ? 'white' : 'black' }}>
-                    <h1 className='my-5'><strong>Laboratory Tutorials</strong></h1>
+                    <h1 className='mt-5'><strong>Laboratory Tutorials</strong></h1>
                 </div>
-                <br />
                 <div className='container'>
                     <div className='container my-3 mb-3 text-start'>
                         <h2 style={{ color: props.mode === 'dark' ? 'white' : '#cf2d2d' }}>First Year</h2>
