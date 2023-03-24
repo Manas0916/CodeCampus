@@ -95,7 +95,7 @@ const Card = (props) => {
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Machine Coding Round Questions (LLD)</h4>
                 <p className="card-text my-5" style={{color: props.mode==='dark'?'white':'black'}}><strong>Prepare System design questions that are asked from Freshers</strong></p>
                 <div className="container my-5">
-                  <Link to="https://workat.tech/machine-coding/practice" className={`btn btn-outline-${props.mode==='dark'?'warning':'primary'}`}>Get Started &raquo;</Link>
+                  <Link to="https://workat.tech/machine-coding/practice" target="_blank" className={`btn btn-outline-${props.mode==='dark'?'warning':'primary'}`}>Get Started &raquo;</Link>
                 </div>
               </div>
             </div>

@@ -95,6 +95,7 @@ const Navbar = (props) => {
                                 <li><Link className="dropdown-item" target='_blank' to="https://www.codewithharry.com/tutorial/html-home/">HTML</Link></li>
                                 <li><Link className="dropdown-item" target='_blank' to="https://www.codewithharry.com/tutorial/css-home/">CSS</Link></li>
                                 <li><Link className="dropdown-item" target='_blank' to="https://www.codewithharry.com/tutorial/js/">JAVASCRIPT</Link></li>
+                                <li><Link className="dropdown-item" target='_blank' to="https://www.youtube.com/playlist?list=PLu0W_9lII9agwhy658ZPA0MTStKUJTWPi">GIT TUTORIALS</Link></li>
                             </ul>
                         </li>
 

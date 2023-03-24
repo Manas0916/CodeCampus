@@ -31,6 +31,7 @@ function App() {
       setMode('light');
       document.body.style.backgroundColor = '#eeecea';
     }
+    
     // setDarkMode(!darkMode);
   }
 
