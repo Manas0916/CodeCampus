@@ -13,6 +13,7 @@ import Telegram from './components/Telegram';
 import Youtube from './components/Youtube';
 import PageNotFound from './components/PageNotFound';
 import React, { useState} from 'react';
+import Footer from './components/Footer';
 
 function App() {
   // const storedDarkMode = localStorage.getItem("DARK_MODE");
@@ -55,6 +56,7 @@ function App() {
           <Route exact path="/youtube" element={<Youtube mode={mode} />}></Route>
           <Route path="*" element={<PageNotFound mode={mode} />}></Route>
         </Routes>
+        <Footer/>
       </Router>
     </div>
   );
