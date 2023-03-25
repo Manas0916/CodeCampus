@@ -115,7 +115,7 @@ const Resume = (props) => {
         <div className="container  my-5">
             <h4 className='text-muted my-5' ><strong><b style={{color: "#32bacb"}}>Here is the Standard Template which is used by Most of the Software Developers in the industry</b></strong></h4>
             <div className="container">
-                <img className='text-centre' src={Resumetemplate} alt="" style={{width: '40%', height:'40%'}}/>
+                <img className='text-centre pic' src={Resumetemplate} alt="" style={{width: '40%', height:'40%'}}/>
             </div>
             <div className="container">
                 <a className={`btn btn-outline-${props.mode==='dark'?'warning':'danger'} btn-lg mx-5 my-4`} target='_blank' style={{BackgroundColor: "#32bacb"}} href="https://www.overleaf.com/latex/templates/jakes-resume-anonymous/cstpnrbkhndn" rel='noreferrer'>Here is the website if you want to Design your Resume &raquo;</a>

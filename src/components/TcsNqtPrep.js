@@ -23,7 +23,7 @@ const TcsNqtPrep = (props) => {
             </div>
             <br />
             <div className="container">
-                <h5><Link className='link' to="https://takeuforward.org/interviews/tcs-nqt-syllabus-and-exam-pattern-updated-dec-2021/" target="_blank" style={{color: props.mode==='dark'?'#ffc007':'#669cd9'}}>Check Detailed TCS NQT Syllabus Here &raquo;</Link></h5>
+                <h5><Link className="link" to="https://takeuforward.org/interviews/tcs-nqt-syllabus-and-exam-pattern-updated-dec-2021/" target="_blank" style={{color: props.mode==='dark'?'#ffc007':'#669cd9'}}>Check Detailed TCS NQT Syllabus Here &raquo;</Link></h5>
             </div>
             <br />
             <div className={`container mt-5 ${props.mode==='dark'?'text-light':'text-muted'}`}>

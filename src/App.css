@@ -69,6 +69,33 @@ body{
 .dropdown:hover .dropdown-menu:hover {
   display: block;
 }
+#a:hover{
+  background-color: #f5ec78!important;
+  font-size: 17px;
+  border-radius: 10px;
+}
+#b:hover {
+  background-color: #e9ecef!important;
+  font-size: 17px;
+  border-radius: 10px;
+}
+#ca:hover {
+  background-color: #475e7a!important;
+  transform: scale(1.1);
+}
+#cb:hover {
+  background-color: #e8e6e6!important;
+  transform: scale(1.1);
+}
+.title:hover {
+  transform: scale(1.06);
+}
+.pic:hover {
+  transform: scale(1.3);
+}
+#cs:hover {
+  color: #a0dcff;
+}
 .dropdown-menu li {
   position: relative;
 }
