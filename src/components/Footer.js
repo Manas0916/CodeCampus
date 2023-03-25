@@ -23,8 +23,8 @@ const Footer = () => {
                   <li className="list-group mb-2 mt-2" style={{ fontSize: '20px'}}><strong>Explore</strong></li>
                   <li className="list-group"><Link id="cs" className="link" to="/" onClick={()=>{window.scrollTo(0, 0);}}><b>Home</b></Link></li>
                   <li className="list-group"><Link id="cs" className="link" to="/about"><b>About</b></Link></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/"><b>Service</b></Link></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/"><b>Contact</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="*"><b>Service</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="*"><b>Contact</b></Link></li>
                 </ul>
               </div>
             </div>
