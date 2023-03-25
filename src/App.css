@@ -73,11 +73,13 @@ body{
   background-color: #f5ec78!important;
   font-size: 17px;
   border-radius: 10px;
+  color: #cf2d2d!important;
 }
 #b:hover {
   background-color: #e9ecef!important;
   font-size: 17px;
   border-radius: 10px;
+  
 }
 #ca:hover {
   background-color: #475e7a!important;
