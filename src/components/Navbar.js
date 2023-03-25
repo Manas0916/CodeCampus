@@ -11,7 +11,7 @@ const Navbar = (props) => {
             <div className="container-fluid">
                 {/* navbar color */}
                 {/* style={{color : "#d8b3fe"}} */}
-                <Link className="navbar-brand" to="/" style={{ color: props.mode === 'dark' ? '#d8b3fe' : '#ffc007' }}><b><strong>CodeCampus</strong></b></Link>
+                <Link className="navbar-brand" to="/" style={{ color: props.mode === 'dark' ? '#d8b3fe' : '#9235e4' }}><b><strong>CodeCampus</strong></b></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>

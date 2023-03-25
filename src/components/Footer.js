@@ -21,10 +21,10 @@ const Footer = () => {
               <div className="col-md-6">
                 <ul className="list-inline mb-0 float-md-end text-start">
                   <li className="list-group mb-2 mt-2" style={{ fontSize: '20px'}}><strong>Explore</strong></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/" target="_blank"><b>Home</b></Link></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/about" target="_blank"><b>About</b></Link></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/" target="_blank"><b>Service</b></Link></li>
-                  <li className="list-group"><Link id="cs" className="link" to="/" target="_blank"><b>Contact</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="/"><b>Home</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="/about"><b>About</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="/"><b>Service</b></Link></li>
+                  <li className="list-group"><Link id="cs" className="link" to="/"><b>Contact</b></Link></li>
                 </ul>
               </div>
             </div>
