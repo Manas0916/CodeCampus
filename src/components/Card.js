@@ -1,13 +1,5 @@
-//delete carditem and make changes in card.js and make folders of images named as banner and cards.
 import React from 'react';
 import { Link } from "react-router-dom";
-
-// import projroad from './images/Cards/projroad.jpg'
-// import sbp from './images/Cards/sbp.png'
-// import pbp from './images/Cards/pbp.png'
-// import cv from './images/Cards/cv.png'
-// import cpdsa from './images/Cards/cpdsa.png'
-// import aptitude from './images/Cards/aptitude.png'
 
 const Card = (props) => {
   return (
@@ -15,8 +7,8 @@ const Card = (props) => {
       <h1 className={`text-${props.mode === 'light'?'dark':'light'}`}>Latest Tutorials</h1>
       <div className="container my-5 text-centre">
         
-        <div className="row my-2 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-3 my-2">
+        <div className="row my-3 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Project Ideas</h4>
@@ -27,7 +19,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3 my-2">
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Service Based Company SDE Sheets</h4>
@@ -39,7 +31,7 @@ const Card = (props) => {
             </div>
           </div>
 
-          <div className="col-md-3 mx-3 my-2">
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Product Based Company SDE Sheets</h4>
@@ -52,8 +44,8 @@ const Card = (props) => {
           </div>
         </div>
 
-        <div className="row my-2 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-3 my-2">
+        <div className="row my-3 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Resume / CV Building</h4>
@@ -64,7 +56,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3 my-2 ">
+          <div className="col-md-3 mx-4 my-2 ">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Competitive Programming / DSA Learning</h4>
@@ -75,7 +67,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3 my-2">
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px'}}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Aptitude Preparation / Reasoning</h4>
@@ -88,8 +80,8 @@ const Card = (props) => {
           </div>
         </div>
 
-        <div className="row my-2 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-3 my-2">
+        <div className="row my-3 mx-4 d-flex justify-content-center" >
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Machine Coding Round Questions (LLD)</h4>
@@ -100,7 +92,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3 my-2 ">
+          <div className="col-md-3 mx-4 my-2 ">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Top Youtube Channels</h4>
@@ -111,7 +103,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-3 my-2">
+          <div className="col-md-3 mx-4 my-2">
             <div className="card" style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px'}}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Top Telegram Channels</h4>

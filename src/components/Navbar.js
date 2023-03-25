@@ -12,7 +12,7 @@ const Navbar = (props) => {
             <div className="container-fluid">
                 {/* navbar color */}
                 {/* style={{color : "#d8b3fe"}} */}
-                <Link className="navbar-brand" to="/" style={{color: props.mode==='dark'?'#d8b3fe':'#9235e4'}}><b><strong>CodeCampus</strong></b></Link>
+                <Link className="navbar-brand" to="/" style={{ color: props.mode === 'dark' ? '#d8b3fe' : '#9235e4' }}><b><strong>CodeCampus</strong></b></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -119,19 +119,10 @@ const Navbar = (props) => {
                         </li>
 
                         <li className="nav-item"> <Link className="nav-link active" to="/virtuallab">VIRTUAL LABS</Link> </li>
-
                     </ul>
-                </div>
-                <div className="mx-3">
-                    {props.mode==='dark'?<img src={sun} alt="" width="20px"/>:''}
-                </div>
-                <div className={`form-check form-switch text-${props.mode === 'light' ? 'dark' : 'light'}`}>
-                    {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode==='dark'?<img src={sun} alt="" width="20px" />:''}</label> */}
-                    <input className="form-check-input" aria-checked='false' style={{ cursor: 'pointer' }} onClick={props.toggleMode} type="checkbox" role="switch" id="flexSwitchCheckDefault" />
-                    {/* <label className="form-check-label" htmlFor="flexSwitchCheckDefault">{props.mode==='light'?<img src={moon} alt="" width="20px" />:''}</label> */}
-                </div>
-                <div className="mx-2">
-                    {props.mode==='light'?<img src={moon} alt="" width="20px"/>:''}
+                    <div className='mx-3'>
+                        {props.mode==='dark'?<img src={sun} alt="" style={{ cursor: 'pointer', width: "30px" }} onClick={props.toggleMode} />:<img src={moon} alt="" style={{ cursor: 'pointer', width: "30px"  }} onClick={props.toggleMode}/>}
+                    </div>
                 </div>
             </div>
 
