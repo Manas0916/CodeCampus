@@ -9,8 +9,6 @@ const Navbar = (props) => {
     return (
         <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode} fixed-top shadow-lg`} data-bs-theme="dark">
             <div className="container-fluid">
-                {/* navbar color */}
-                {/* style={{color : "#d8b3fe"}} */}
                 <Link className="navbar-brand" to="/" style={{ color: props.mode === 'dark' ? '#d8b3fe' : '#9235e4' }}><b><strong>CodeCampus</strong></b></Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span className="navbar-toggler-icon"></span>

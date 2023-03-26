@@ -14,12 +14,10 @@ import Youtube from './components/Youtube';
 import PageNotFound from './components/PageNotFound';
 import React, { useState} from 'react';
 import Footer from './components/Footer';
+import Contact from './components/Contact';
 
 function App() {
-  // const storedDarkMode = localStorage.getItem("DARK_MODE");
   const [mode, setMode] = useState('light');
-  // const [darkMode, setDarkMode] = useState(storedDarkMode);
-
 
   const toggleMode = ()=>{
     if(mode === 'light')
@@ -31,14 +29,7 @@ function App() {
       setMode('light');
       document.body.style.backgroundColor = '#eeecea';
     }
-    
-    // setDarkMode(!darkMode);
   }
-
-  // useEffect(() => {
-  //   localStorage.setItem("DARK_MODE", darkMode);
-  //   // console.log(`Is in dark mode? ${darkMode}`);
-  // }, [darkMode]);
 
   return (
     <div className="App">
@@ -55,6 +46,7 @@ function App() {
           <Route exact path="/DsaCp" element={<DsaCp mode={mode}/>}></Route>
           <Route exact path="/telegram" element={<Telegram mode={mode}/>}></Route>
           <Route exact path="/youtube" element={<Youtube mode={mode} />}></Route>
+          <Route exact path="/contact" element={<Contact mode={mode} />}></Route>
           <Route path="*" element={<PageNotFound mode={mode} />}></Route>
         </Routes>
         <Footer/>
