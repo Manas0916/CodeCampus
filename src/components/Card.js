@@ -8,7 +8,7 @@ const Card = (props) => {
       <div className="container my-5 text-centre">
         
         <div className="row my-3 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-4 my-2">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Project Ideas</h4>
@@ -19,7 +19,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-4 my-2">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Service Based Company SDE Sheets</h4>
@@ -31,12 +31,12 @@ const Card = (props) => {
             </div>
           </div>
 
-          <div className="col-md-3 mx-4 my-2">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Product Based Company SDE Sheets</h4>
-                <p className="card-text my-5" style={{color: props.mode==='dark'?'white':'black'}}><strong>Solve Most Asked Questions by Top Product Based Companies (MAANG)</strong></p>
-                <div className="container my-5">
+                <p className="card-text my-3" style={{color: props.mode==='dark'?'white':'black'}}><strong>Solve Most Asked Questions by Top Product Based Companies (MAANG)</strong></p>
+                <div className="container my-4">
                   <Link to="/ProductBasedPrep" className={`btn btn-outline-${props.mode==='dark'?'warning':'primary'}`}>Get Started &raquo;</Link>
                 </div>
               </div>
@@ -45,7 +45,7 @@ const Card = (props) => {
         </div>
 
         <div className="row my-3 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-4 my-2" >
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex" >
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Resume / CV Building</h4>
@@ -56,18 +56,18 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-4 my-2 ">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Competitive Programming / DSA Learning</h4>
                 <p className="card-text my-3" style={{color: props.mode==='dark'?'white':'black'}}><strong>Prepare Data Structure concepts and Competitive Programming for Online Assessments / Interviews</strong></p>
-                <div className="container my-5">
+                <div className="container my-4">
                   <Link to="/DsaCp"className={`btn btn-outline-${props.mode==='dark'?'warning':'primary'}`}>Get Started &raquo;</Link>
                 </div>
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-4 my-2">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px'}}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Aptitude Preparation / Reasoning</h4>
@@ -80,8 +80,8 @@ const Card = (props) => {
           </div>
         </div>
 
-        <div className="row my-3 mx-4 d-flex justify-content-center" >
-          <div className="col-md-3 mx-4 my-2">
+        <div className="row my-3 mx-4 d-flex justify-content-center d-flex" >
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Machine Coding Round Questions (LLD)</h4>
@@ -92,7 +92,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-4 my-2 ">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px' }}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Top Youtube Channels</h4>
@@ -103,7 +103,7 @@ const Card = (props) => {
               </div>
             </div>
           </div>
-          <div className="col-md-3 mx-4 my-2">
+          <div className="col-md-3 mx-4 my-2 justify-content-center d-flex">
             <div className="card" id={`${props.mode==='dark'?'ca':'cb'}`} style={{ width: '20rem', height: '18rem', backgroundColor: props.mode==='dark'?'#5F6F81':'#eeeeef', borderRadius: '15px'}}>
               <div className="card-body">
                 <h4 className="card-title" style={{color: props.mode==='dark'?'white':'black'}}>Top Telegram Channels</h4>

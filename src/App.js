@@ -1,7 +1,8 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import {BrowserRouter as Router, Routes, Route,} from "react-router-dom";
-import Home from './components/Home';
+import { useEffect } from 'react';
+// import Home from './components/Home';
 import About from './components/About';
 import VirtualLab from './components/VirtualLab';
 import Project from './components/Project';
@@ -15,9 +16,11 @@ import PageNotFound from './components/PageNotFound';
 import React, { useState} from 'react';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
+import Login from './components/Login';
 
 function App() {
   const [mode, setMode] = useState('light');
+  const [value, setValue] = useState('');
 
   const toggleMode = ()=>{
     if(mode === 'light')
@@ -30,13 +33,17 @@ function App() {
       document.body.style.backgroundColor = '#eeecea';
     }
   }
-
+  useEffect(() => {
+    setValue(localStorage.getItem('email'));
+    console.log(value);
+  }, [value]);
   return (
-    <div className="App">
+    <>
+    <div className='App'>
       <Router>
-        <Navbar mode = {mode} toggleMode={toggleMode}/>
+       <Navbar mode = {mode} toggleMode={toggleMode}/> 
         <Routes>
-          <Route exact path="/" element={<Home mode = {mode} toggleMode={toggleMode}/>}></Route>
+          <Route exact path="/" element={<Login mode = {mode} toggleMode={toggleMode}/>}></Route>
           <Route exact path="/about" element={<About mode={mode} />}></Route>
           <Route exact path="/virtuallab" element={<VirtualLab mode={mode} />}></Route>
           <Route exact path="/project" element={<Project mode={mode}/>}></Route>
@@ -51,7 +58,8 @@ function App() {
         </Routes>
         <Footer/>
       </Router>
-    </div>
+     </div>
+    </>
   );
 }
 
