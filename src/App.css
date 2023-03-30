@@ -1,5 +1,11 @@
-body{
+#body{
   background-color: #eeecea;
+}
+body.light{
+  background-color: #eeecea;
+}
+body.dark{
+  background-color: #3f404a;
 }
 .App {
   text-align: center;
@@ -10,9 +16,12 @@ body{
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media ((prefers-color-scheme: light)) {
+  :root {
+    background-color: #eeecea;
+  }
+  .body{
+    background-color: #eeecea;
   }
 }
 

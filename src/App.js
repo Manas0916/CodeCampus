@@ -19,24 +19,37 @@ import Contact from './components/Contact';
 import Login from './components/Login';
 
 function App() {
-  const [mode, setMode] = useState('light');
-  const [value, setValue] = useState('');
+
+  const [mode, setMode] = useState(localStorage.getItem('mode') || 'light');
 
   const toggleMode = ()=>{
     if(mode === 'light')
     {
       setMode('dark');
+      localStorage.setItem('mode', 'dark');
+      document.body.classList.toggle('dark');
       document.body.style.backgroundColor = '#3f404a';
     }
     else{
       setMode('light');
+      localStorage.setItem('mode', 'light');
+      document.body.classList.toggle('light');
       document.body.style.backgroundColor = '#eeecea';
     }
   }
   useEffect(() => {
-    setValue(localStorage.getItem('email'));
-    console.log(value);
-  }, [value]);
+    // console.log(mode);
+    if(mode !== null && mode === 'light'){
+      setMode('light');
+      document.body.classList.toggle('light');
+      document.body.style.backgroundColor = '#eeecea';
+    }
+    if(mode !== null && mode === 'dark'){
+      setMode('dark');
+    }
+  }, [mode, setMode]);
+
+
   return (
     <>
     <div className='App'>
