@@ -16,6 +16,19 @@ body.dark{
   pointer-events: none;
 }
 
+.dd {
+  display: flex;
+  align-items: center;
+}
+
+.content {
+  flex: 2;
+}
+
+img {
+  flex: 1;
+}
+
 @media ((prefers-color-scheme: light)) {
   :root {
     background-color: #eeecea;
