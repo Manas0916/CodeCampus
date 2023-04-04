@@ -19,7 +19,7 @@ const Home = (props) => {
     <div>
       <Carousel mode={props.mode} />
       <Card mode={props.mode} toggleMode={props.toggleMode} />
-      <button className='btn btn-primary my-4' onClick={handleLogOut}>LOGOUT</button>
+      <button className={`my-2 mb-5 btn btn-outline-${props.mode==='dark'?'warning':'primary'}`} onClick={handleLogOut}>LOGOUT</button>
     </div>
   );
 }
