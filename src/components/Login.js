@@ -32,7 +32,7 @@ const Login = ({ mode, toggleMode }) => {
   return (
     <>
       {value ? <Home mode={mode} toggleMode={toggleMode} /> :
-        <div className="container dd mt-5 p-5">
+        <div className="container dd my-5 py-5">
           <div className="content text-start justify-content p-5">
             <p style={{ fontSize: '60px', fontWeight: 'bold', color: mode === 'dark' ? 'white' : 'black' }}>Code Campus</p>
             <p style={{ fontSize: '30px', fontWeight: 'bold', color: mode === 'dark' ? 'white' : 'black' }} className="mt-0">Ambalika's Placement Assistant</p>

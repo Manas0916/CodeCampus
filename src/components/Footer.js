@@ -4,13 +4,13 @@ import { FaLinkedin, FaTelegram, FaWhatsapp } from 'react-icons/fa';
 
 const Footer = () => {
   return (
-    <footer className="bg-dark text-white py-4 ">
+    <footer className="bg-dark text-white pb-1">
       <div className="container text-center">
         <div className="row align-items-center">
-          <div className="col-md-5">
+          <div className="col-md-5 mt-2">
             <p className="mb-0">&copy; 2023 <strong>CodeCampus</strong> Website. All rights reserved.</p>
           </div>
-          <div className="col-md-6">
+          <div className="col-md-6 mt-5">
             <ul className="list-inline mb-0 float-md-end text-start">
               <li className="list-group mb-2 mt-2" style={{ fontSize: '20px' }}><strong>Connect With Us</strong></li>
               <li className="list-group-items mt-2"><Link id="cs" className="link" to="https://www.linkedin.com/company/cosmic-coders/" target="_blank"><FaLinkedin style={{ fontSize: '25px' }} /> <b>LinkedIn</b></Link></li>
