@@ -19,6 +19,7 @@ body.dark{
 .dd {
   display: flex;
   align-items: center;
+  padding: 80px;
 }
 
 .content {

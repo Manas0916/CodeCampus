@@ -97,12 +97,6 @@ const Navbar = (props) => {
                             </ul>
                         </li>
 
-                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.codewithharry.com/tutorial/php/">PHP</Link> </li>
-
-                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.codewithharry.com/tutorial/react-home/">REACT JS</Link> </li>
-
-                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.w3schools.com/nodejs/default.asp">NODE JS</Link> </li>
-
                         <li className="nav-item dropdown">
                             <Link className="nav-link active dropdown-toggle title" to="/" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> SQL </Link>
                             <ul className="dropdown-submenu dropdown-menu" style={{backgroundColor: props.mode==='dark'?'#505266':'white', borderRadius: '10px'}}>
@@ -136,6 +130,12 @@ const Navbar = (props) => {
                                 <li><Link className="dropdown-item" target='_blank' to="https://www.w3schools.com/react/react_quiz.asp" style={{color: props.mode==='dark'?'#ffc007':'black'}} id={`${props.mode==='dark'?'a':'b'}`}>REACT JS QUIZ</Link></li>  
                             </ul>
                         </li>
+
+                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.codewithharry.com/tutorial/php/">PHP</Link> </li>
+
+                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.codewithharry.com/tutorial/react-home/">REACT JS</Link> </li>
+
+                        <li className="nav-item"> <Link className="nav-link active title" target='_blank' to="https://www.w3schools.com/nodejs/default.asp">NODE JS</Link> </li>
 
                         <li className="nav-item"> <Link className="nav-link active title" to="/virtuallab">VIRTUAL LABS</Link> </li>
                     </ul>
